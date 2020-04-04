@@ -12,7 +12,8 @@ class Anagram
     good = []
     trash = []
     list.each do |listed_word|
-      if listed_word.length == word.length
+      if listed_word.split("").sort == word.split("").sort
+      # if listed_word.length == word.length
         good << listed_word
       else
         trash << listed_word
